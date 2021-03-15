@@ -1,0 +1,304 @@
+@font-face {
+    font-family: ocrfRegular;
+    src: url("/fonts/OCRF-RegularC.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    font-family: ocrfRegular;
+}
+header{
+    margin: 34px 0px 25px 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+p{
+    margin: 0;
+}
+h1{
+    margin: 0;
+}
+ul{
+    margin: 0;
+}
+.yellow-text{
+    color: #FEE600;
+}
+.header-block{
+    width: 1320px;
+}
+.default-button{
+    font-size: 33.5px;
+    padding: 15px 0px;
+    width: 285px;
+    border-radius: 12px;
+    border:none;
+    background-color: #2B2D33;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s color ease-out;
+}
+.default-button:hover{
+    color: #FEE600;
+}
+.main-menu{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-bottom: 0;
+}
+.list-main-menu{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-right: 50px;
+}
+.menu-link{
+    display: block;
+    font-size: 33.5px;
+}
+.logo-block{
+    margin-left: 90px;
+}
+.logo-image{
+    width: 68px;
+    height: 100%;
+}
+.logo-code{
+    height: 55.5px;
+    margin-left: 35px;
+}
+.main-content{
+    position: relative;
+    display: block;
+}
+.img-banner-main{
+    width: 100%;
+}
+.button-block{
+    position: absolute;
+    width: calc(100% - 30px);
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    margin-bottom: 20px;
+}
+.button-prog{
+    margin-right: 30px;
+}
+.text-about-company{
+    font-size: 33.5px;
+    line-height: 1.07;
+}
+.text-block-about{
+    position: relative;
+    background-color: #FEE600;
+    border-radius: 50px;
+    padding: 40px 40px 50px;
+    /*  margin-right: 60px;
+      margin-left: 215px;*/
+    width: 1045px;
+    margin-left: auto;
+    margin-right: 60px;
+    z-index: 0;
+}
+.text-block-about:not(:first-child){
+    margin-top: 30px;
+}
+section.about-company{
+    margin-top: 105px;
+}
+.invert-text-about{
+    color: white;
+    z-index: 1;
+}
+.invert-text-about::after{
+    content: '';
+    height: 40px;
+    width: 100%;
+    right: 80%;
+    background: black;
+    position: absolute;
+    z-index: -1;
+}
+section.what-we-do{
+    margin-top: 73px;
+    background-color: #2B2D33;
+    color: white;
+    padding: 50px 0 105px;
+}
+.what-we-do-item{
+    position: relative;
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+}
+.what-we-do-item:not(:last-child){
+    margin-bottom: 30px;
+}
+.what-we-do-text{
+    font-size: 33px;
+    line-height: 1.07;
+}
+.title-what-we-do{
+    font-size: 34px;
+    line-height: 1.07;
+}
+section.for-whom-this{
+    padding-top: 105px;
+    margin-bottom: 153px;
+}
+.title-for-whom-this{
+    text-align: center;
+    font-size: 34.5px;
+    margin-bottom: 60px;
+}
+.text-item{
+    font-size: 33px;
+    line-height: 1.07;
+    width: 60%;
+    margin-left: auto;
+    margin-right: 100px;
+}
+.text-item:before{
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-color: black;
+    left: 36%;
+    margin-top: 25px;
+}
+section.program{
+    position: relative;
+    padding-bottom: 100px;
+}
+.title-program{
+    font-size: 33px;
+    line-height: 1.07;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.block-programs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.program-button-block{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 95px;
+}
+.button-student{
+    margin-right: 30px;
+}
+.button-special , .button-student{
+    background-color: #FEE600;
+    color: black;
+    transition: 0.3s background-color ease-in;
+}
+.button-special:hover , .button-student:hover{
+    background-color: white;
+    color: black;
+}
+.day-button{
+    display: block;
+    width: 590px;
+    padding: 25px 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    text-align: center;
+    color: #FEE600;
+}
+.day-button:not(:first-child){
+    margin-top: 40px;
+}
+
+.list-program{
+    list-style: none;
+    font-size: 33px;
+    text-align: right;
+    margin-right: 35px;
+}
+.list-item-program:not(:last-child){
+    margin-bottom: 22px;
+}
+.list-item-program:after{
+    content: '';
+    background-color: #FEE600;
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    left: 0px;
+    z-index: -1;
+}
+.description-item-program{
+    font-size: 33px;
+    line-height: 1.07;
+}
+.description-item-program:not(:last-child){
+    margin-bottom: 33px;
+}
+.block-list-program{
+    width: 29%;
+    display: block;
+    position: relative;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.block-description-item-program{
+    margin-top: 25px;
+    margin-left: 60px;
+    width: 45%;
+}
+.second-day-description-item-program{
+    margin-top: 0;
+}
+.dip-margin-bottom{
+    margin-bottom: 30px!important;
+}
+.lip-margin-bottom{
+    margin-bottom: 55px!important;
+}
+.dip-other-margin-bottom{
+    margin-bottom: 30px!important;
+}
+.lip-other-margin-bottom{
+    margin-bottom: 57px!important;
+}
+.code-r-2-button{
+    margin-top: 90px!important;
+}
+section.why-do-we-share{
+    background-color: #2B2D33;
+    color: white;
+    position: relative;
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
+.title-why-do-we-share{
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.block-text-ws{
+    width: 78%;
+    margin-left: auto;
+    margin-right: 55px;
+}
+.block-text-ws:not(:last-child){
+    margin-bottom: 70px;
+}
+.title-block-text-ws{
+    font-size: 34px;
+    line-height: 1.07;
+}
+.text-ws{
+    font-size: 33px;
+    line-height: 1.07;
+}
